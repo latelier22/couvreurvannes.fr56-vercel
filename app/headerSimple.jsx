@@ -1,8 +1,9 @@
 "use client";
 import { useEffect } from "react";
 import { menuItems, site } from "./site";
+import Title from "./Title";
 
-const HeaderSimple = ({ photos }) => {
+const HeaderSimple = ({ photos, title }) => {
   useEffect(() => {
     const init = async () => {
       const { Tooltip, initTE } = await import("tw-elements");
@@ -13,7 +14,7 @@ const HeaderSimple = ({ photos }) => {
 
   return (
     <header>
-      <div className="bg-sky-200 px-6 py-1 text-center text-neutral-800 dark:bg-neutral-700 dark:text-neutral-200">
+      <div className="bg-sky-200  text-center text-neutral-800 dark:bg-neutral-700 dark:text-neutral-200">
         <div className="flex flex-col  lg:flex-row first-letter:lg:justify-around  justify-center items-center">
           <div className="hidden md:block lg:self-start">
             <img
@@ -28,10 +29,10 @@ const HeaderSimple = ({ photos }) => {
             </h1>
             <div className="flex flex-row justify-around items-center">
               <h3 className="mb-8 text-black text-3xl font-bold">
-                Vannes - Pontivy- Locminé
+                Vannes - Pontivy- LocminÃ©
               </h3>
               <a
-                className="self-stop rounded-2xl h-10 bg-sky-600 px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-sky-200 shadow-[0_4px_9px_-4px_#3b71ca] transition duration-150 ease-in-out hover:bg-lime-300 hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:bg-lime-200 focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:text-green-900 focus:outline-none focus:ring-0 active:bg-lime-100 active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)]"
+                className="self-stop rounded-2xl h-10 bg-sky-600 px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-white shadow-[0_4px_9px_-4px_#3b71ca] transition duration-150 ease-in-out hover:text-sky-800 hover:bg-sky-200 hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:bg-lime-200 focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:text-green-900 focus:outline-none focus:ring-0 active:bg-lime-100 active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)]"
                 data-te-ripple-init
                 data-te-ripple-color="light"
                 href="/contact"
@@ -42,12 +43,13 @@ const HeaderSimple = ({ photos }) => {
             </div>
           </div>
         </div>
+        <Title title={title} />
       </div>
 
       <div>
         <div className="container mx-auto px-5 py-2 lg:px-32 lg:pt-12 animate-slideRight">
           <div className="-m-1 flex flex-wrap md:-m-2">
-            {/* Utiliser une boucle pour générer les éléments d'image */}
+            {/* Utiliser une boucle pour gÃ©nÃ©rer les Ã©lÃ©ments d'image */}
             {photos.map((photo, index) => (
               <div
                 key={index}
@@ -65,7 +67,6 @@ const HeaderSimple = ({ photos }) => {
           </div>
         </div>
       </div>
-
     </header>
   );
 };

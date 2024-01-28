@@ -12,7 +12,7 @@ const Home = () => {
   const pageTitle = "Accueil";
   const pageDescription = "Bienvenue sur le site de PRO COUVERTURE LOUDEAC";
 
-  // Déclarer les photos dans un tableau d'objets
+  // DÃ©clarer les photos dans un tableau d&apos;objets
   const photos = [];
 
   
@@ -20,42 +20,42 @@ const Home = () => {
   const cards = [
     {
       title: "ENTRETIEN",
-      text: "Acheter votre véhicule pour faire des balades avec ou organiser des courses entre ami(e)s.",
-      button: "Détail",
+      text: "",
+      button: "DÃ©tail",
       buttonColor: "bg-sky-500",
       link: "/entretien",
       url: "menu-entretien.png",
-      alt: "Acheter votre véhicule pour faire des balades avec ou organiser des courses entre ami(e)s.",
+      alt: "",
     },
 
     {
       title: "REPARATION",
-      text: "Apprendre en s'ammusant",
+      text: "",
       button: "COMMANDEZ !",
       buttonColor: "bg-orange-500",
       link: "/reparation",
       url: "menu-reparation-toiture.png",
-      alt: "Apprendre en s'ammusant",
+      alt: "",
     },
 
     {
       title: "PEINTURE",
-      text: "Cartes Magic, le deuxième jeu de carte le plus popolulaire au monde",
+      text: "",
       button: "COMMANDEZ !",
       buttonColor: "bg-primary-700",
-      link: "https://dev-54ta5gq-tz7gps24d2hqk.fr-3.platformsh.site/fr_FR/taxons/vehicules-radio-commandes",
+      link: "/peinture",
       url: "menu-peinture.png",
-      alt: "Cartes Magic, le deuxième jeu de carte le plus popolulaire au monde",
+      alt: "",
     },
 
     {
       title: "TRAVAUX DIVERS",
-      text: "Faîtes le plein d'idées cadeaux",
+      text: "",
       button: "COMMANDEZ !",
       buttonColor: "bg-primary-700",
-      link: "https://dev-54ta5gq-tz7gps24d2hqk.fr-3.platformsh.site/fr_FR/taxons/cadeaux",
+      link: "/travaux-divers",
       url: "menu-travaux-divers.png",
-      alt: "Cartes Magic, le deuxième jeu de carte le plus popolulaire au monde",
+      alt: "",
     },
     
   ];
@@ -64,11 +64,16 @@ const Home = () => {
   const sections = [
     {
       title: "ENTRETIEN",
-      body : " des solutions exceptionnelles pour répondre à vos besoins en matière de toiture.Que ce soit pour la réparation, l'entretien, la gestion des fuites de toit, les peinture des toitures et boiseries ou d'autres travaux divers de maçonnerie, nous sommes là pour vous offrir des services fiables et professionnels. Explorez nos différentes sections pour en savoir plus sur nos activités."
+      body : " des solutions exceptionnelles pour répondre à vos besoins en matière de toiture.Que ce soit pour la réparation, l'entretien, la gestion des fuites de toit, les peinture des toitures et boiseries ou d'autres travaux divers de maÃ§onnerie, nous sommes là pour vous offrir des services fiables et professionnels. Explorez nos différentes sections pour en savoir plus sur nos activités."
     },
     {
       title: " NOS SAVOIRS FAIRES",
-      body : <ul className="list-disc pl-4"><li>• Entretien et nettoyage des toitures, murs, démoussage, suppression du vert des toitures, remplacement des tuiles, ardoises.</li><li>Entretien et nettoyage des toitures, murs, démoussage, suppression du vert des toitures, remplacement des tuiles, ardoises.</li><li>Intervention 7/7 J - 24/24h en cas d’urgences ou fuites de votre toiture.</li><li>Pose de bâche en d’urgence, mise hors d’eau, remplacement des tuiles, ardoises.</li><li>Peinture boiseries, peinture sur toitures.</li><li>Réparation, nettoyage ou remise à neuf de votre gouttière.</li><li>Petits travaux de maçonnerie, mur en pierre, parpaings, brique, allée, pavés pierre, pavés autobloquant, petite dalle, terrasse.</li></ul>
+      body : <ul className="list-disc pl-4"><li>Entretien et nettoyage des toitures, murs, démoussage, suppression du vert des toitures, remplacement des tuiles, ardoises.</li>
+      <li>Intervention 7/7 J - 24/24h en cas d&apos;urgences ou fuites de votre toiture.</li>
+      <li>Pose de bâche en casd&apos;urgence, mise hors d&apos;eau, remplacement des tuiles, ardoises.</li>
+      <li>Peinture boiseries, peinture sur toitures.</li>
+      <li>Réparation, nettoyage ou remise à neuf de votre gouttière.</li>
+      <li>Petits travaux de ma&ccedil;onnerie, mur en pierre, parpaings, brique, allées, pavés pierre, pavés autobloquants, petite dalle, terrasse...</li></ul>
     },
   ]
 
@@ -80,7 +85,7 @@ const Home = () => {
   return (
     <RootLayout pageTitle={pageTitle} pageDescription={pageDescription}>
       <Navbar />
-      <HeaderSimple photos={photos} />
+      <HeaderSimple photos={photos} title={pageTitle}/>
       <Pictos />
 
       <div className="bg-white">

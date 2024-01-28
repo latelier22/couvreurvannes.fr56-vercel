@@ -16,7 +16,7 @@ const MyModal = ({ index, image, card, children, className }) => {
       {/* <!-- TW Elements is free under AGPL, with commercial license required for specific uses. See more details: https://tw-elements.com/license/ and contact us for queries at tailwind@mdbootstrap.com -->  */}
       <div className="space-y-2">
         {/* <!--Button trigger vertically centered scrollable modal--> */}
-        <button
+        {/* <button
           type="button"
           className={className}
           data-te-toggle="modal"
@@ -25,7 +25,7 @@ const MyModal = ({ index, image, card, children, className }) => {
           data-te-ripple-color="light"
         >
           {children}
-        </button>
+        </button> */}
       </div>
 
       
@@ -34,7 +34,7 @@ const MyModal = ({ index, image, card, children, className }) => {
         data-te-modal-init
         className="fixed left-0 top-0 z-[1055] hidden h-full w-full overflow-y-auto overflow-x-hidden outline-none"
         id={`myModal2-${index}`}
-        tabindex="-1"
+        tabIndex="-1"
         aria-labelledby="exampleModalCenteredScrollableLabel"
         aria-modal="true"
         role="dialog"
@@ -52,24 +52,24 @@ const MyModal = ({ index, image, card, children, className }) => {
               >
                {card.title}
               </h5>
-              {/* <!--Close button--> */}
+              {/* <!--Fermer button--> */}
               <button
                 type="button"
                 className="box-content rounded-none border-none hover:no-underline hover:opacity-75 focus:opacity-100 focus:shadow-none focus:outline-none"
                 data-te-modal-dismiss
-                aria-label="Close"
+                aria-label="Fermer"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
                   viewBox="0 0 24 24"
-                  stroke-width="1.5"
+                  strokeWidth="1.5"
                   stroke="currentColor"
                   className="h-6 w-6"
                 >
                   <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
                     d="M6 18L18 6M6 6l12 12"
                   />
                 </svg>
@@ -89,7 +89,7 @@ const MyModal = ({ index, image, card, children, className }) => {
               
               
               <br />
-              <p>Just like that.</p>
+              <p>.</p>
             </div>
 
             {/* <!--Modal footer--> */}
@@ -101,7 +101,7 @@ const MyModal = ({ index, image, card, children, className }) => {
                 data-te-ripple-init
                 data-te-ripple-color="light"
               >
-                Close
+                Fermer
               </button>
            
             </div>

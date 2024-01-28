@@ -16,7 +16,7 @@ const MyPage = ({ params }) => {
   const page = Pages[pageSlug];
   if (!page) {
     return (
-      <RootLayout pageTitle={"erreur"} pageDescription={""}>
+      <RootLayout >
         <div className="min-h-screen flex flex-col justify-center items-center">
           <h1>Page non trouvée</h1>
         </div>
