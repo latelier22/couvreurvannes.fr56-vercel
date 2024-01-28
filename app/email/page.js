@@ -22,7 +22,7 @@ export default function Contact() {
 		if (!isLoading) {
 			setIsLoading(true);
 
-			const response = await fetch("/api/send", {
+			const response = await fetch("/api/email", {
 				method: "POST",
 				headers: {
 					"Content-Type": "application/json",
@@ -59,8 +59,8 @@ export default function Contact() {
 				>
 					{isSended && (
 						<p>
-							Votre message a bien Ã©tÃ© envoyÃ© avec
-							succÃ¨s nous vous rÃ©pondrons rapidement.
+							Votre message a bien été envoyé avec
+							succès nous vous répondrons rapidement.
 						</p>
 					)}
 					<div
@@ -83,11 +83,11 @@ export default function Contact() {
 									htmlFor="prenom"
 									className="label"
 								>
-									PrÃ©nom
+									Prénom
 								</label>
 								<input
 									className="input"
-									placeholder="PrÃ©nom"
+									placeholder="Prénom"
 									id="prenom"
 									{...register("prenom", {
 										required: true,
@@ -96,7 +96,7 @@ export default function Contact() {
 								{errors.prenom && (
 									<small>
 										Vous devez renseigner votre
-										prÃ©nom.
+										prénom.
 									</small>
 								)}
 							</div>

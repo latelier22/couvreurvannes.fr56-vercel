@@ -4,7 +4,7 @@ import sgMail from "@sendgrid/mail";
 export async function GET()  {
 // Donner la clÃ© API
 	// sgMail.setApiKey(process.env.KEY_SENDGRID);
-	sgMail.setApiKey("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");
+	sgMail.setApiKey("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");
 
 const body = {prenom: "Cyrille",
     nom: "DE L'Atelier",
@@ -25,9 +25,6 @@ const body = {prenom: "Cyrille",
 			contenu: body.message,
 		}
 	};
-    // Donner la clÃ© API
-	// sgMail.setApiKey(process.env.KEY_SENDGRID);
-	sgMail.setApiKey("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");
 
     try {
         const {data} = await sgMail.send(sendGridMail);

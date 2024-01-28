@@ -29,7 +29,7 @@ const HeaderSimple = ({ photos, title }) => {
             </h1>
             <div className="flex flex-row justify-around items-center">
               <h3 className="mb-8 text-black text-3xl font-bold">
-                Vannes - Pontivy- LocminÃ©
+                Vannes - Pontivy- Locminé
               </h3>
               <a
                 className="self-stop rounded-2xl h-10 bg-sky-600 px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-white shadow-[0_4px_9px_-4px_#3b71ca] transition duration-150 ease-in-out hover:text-sky-800 hover:bg-sky-200 hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:bg-lime-200 focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:text-green-900 focus:outline-none focus:ring-0 active:bg-lime-100 active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)]"
