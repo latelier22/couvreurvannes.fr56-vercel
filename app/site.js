@@ -2,6 +2,7 @@ export const site = {
   title: 'TECHNIQUE COUVERTURE',
   description: 'TECHNIQUE COUVERTURE - Tyron MIQUEL- 0780698451',
   societe : "TECHNIQUE COUVERTURE",
+  SIRET: "95205516800019",
   contact : "Tyron MIQUEL",
   telephone: "0780698451",
   adresse: "La villeneuve postic",
@@ -159,7 +160,7 @@ export const Pages = {
       },
       
       "fuites": {
-        title: "Réparation",
+        title: "Fuites",
         description: "Contenu pour la page de réparation...",
         photos : [
           { url: "fuites-1.png", alt: "gallery" },
