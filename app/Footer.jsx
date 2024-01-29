@@ -119,10 +119,8 @@ const Footer = () => {
               <li>{site.codePostal} {site.ville}</li>
               <li>{site.telephone}</li>
               <li>{site.email}</li>
-
-
-             
-              <li className=" text-white">N° de SIRET ..............</li>
+              <br/>
+              <li className=" text-white">N° de SIRET {site.SIRET}</li>
             </ul>
           </div>
 
