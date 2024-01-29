@@ -40,10 +40,11 @@ export async function POST(request) {
 		}
 	};
     // Donner la clÃ© API
-	// sgMail.setApiKey(process.env.KEY_SENDGRID);
-	sgMail.setApiKey("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");
+	sgMail.setApiKey(process.env.KEY_SENDGRID);
+	
 
     try {
+		//console.log(sendGridMail)
         const {data} = await sgMail.send(sendGridMail);
 		console.log(sendGridMail)
         return NextResponse.json({
